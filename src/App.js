@@ -1,17 +1,18 @@
-import ".//components/NavBar.css";
 import "./App.css";
-import NavBar from ".//components/NavBar.js";
-import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar.js";
+import ItemListContainer from "./components/ItemListContainer.js";
+import ItemCount from "./components/ItemCount";
 
 
 function App() {
   return (
     
-    <NavBar/>
-    
-    
-
-    
+    <>
+    <NavBar />
+    <ItemListContainer />
+    {<ItemCount />}
+    </>
+            
   );
 }
 
